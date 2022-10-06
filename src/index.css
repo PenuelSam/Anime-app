@@ -1,13 +1,76 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+
+
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color: black;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app{
+  text-align: center;
+  max-width: 60rem;
+  margin-inline:  auto;
+}
+
+.app h1{
+  color: rgb(128, 79, 79);
+}
+
+
+button{
+  padding: 10px;
+  font-size: 20px;
+  width: 100px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: rgb(128, 79, 79);
+  cursor: pointer;
+  border: none;
+}
+
+input {
+  padding: 10px;
+  padding-left: 15px;
+    font-size: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 600px;
+    margin: auto;
+    outline: none;
+    border: none;
+}
+
+/*Image*/
+
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.image-container > .image-card {
+  color: #fff;
+  border-radius: 15px;
+  position: relative;
+  height: 15rem;
+  cursor: pointer;
+}
+
+
+
+.image-card img {
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.image-card h2{
+  position: absolute;
+  bottom: 0;
+  left: 1rem;
+  font-size: 1rem;
+  text-shadow: 2px black;
 }
