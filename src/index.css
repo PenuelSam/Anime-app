@@ -40,6 +40,17 @@ input {
     border: none;
 }
 
+@media screen and (max-width:390px) {
+  input {
+    width: 60%;
+    padding-left: 5px;
+    font-size: 15px;
+  }
+  button {
+    font-size: 15px;
+  }
+}
+
 /*Image*/
 
 .image-container {

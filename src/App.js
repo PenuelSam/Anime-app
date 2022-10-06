@@ -10,7 +10,7 @@ function App() {
     const response = await fetch(`https://anime-db.p.rapidapi.com/anime?page=1&size=10&search=+${title}`, {
       "method": 'GET',
       "headers": {
-        'X-RapidAPI-Key': 'ef28b3b778msha32a8d3ad262dabp16fe9cjsn2b06ac25740e',
+        'X-RapidAPI-Key': process.env.REACT_APP_ANIME_KEY,
         'X-RapidAPI-Host': 'anime-db.p.rapidapi.com'
       }
     })
